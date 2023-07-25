@@ -9,8 +9,12 @@ Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
+/*celular*/
+@media screen and (min-width:200px) and (max-width:768px) {
+    *{
+        margin: 0px;
+    }
 
-@media screen and (min-width:600px) and (max-width:768px) {
     body {
         background-color: #5f2c82;
     
@@ -18,21 +22,20 @@ Grandes telas: acima de 1200px
 
     #container{
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        align-items: center;
+
     }
 
     main{
         background-color: white;
-        margin: 0px;
-        height: 500px; /*altura*/
+        margin: 8%;
+        height: 510px; /*altura*/
         width: 250px; /*largura*/
         border-radius: 15px;
     }
 
     #login{
-        
+        margin: 0px;
     }
 
     #imagem > img {
@@ -40,8 +43,8 @@ Grandes telas: acima de 1200px
         width: 250px;
         border-radius: 12px 12px 0px 0px ;
     
-    }
-
+    } 
+ /* butoes do formularoe */
     #formulario > h1 {
         text-align: center;
     }
@@ -50,17 +53,73 @@ Grandes telas: acima de 1200px
         text-align: left;
     }
 
-    #box-email{
+    
+    
+   /* butao de enviar o email e a senha*/
+    .form{
         background-color:#5f2c82 ;
         margin: 10px;
-        height: 48px;
+        height: 40px;
         border-radius: 7px;
+        display: flex;
+        gap: 2px;
     }
 
-    #box-email > input {
-        background-color: #49a09dcb;
+    .form > input {
+        background-color: #77f0eccb;
+        margin: 3px;
+        height: 30px;
+        width: 187px;
+        border-radius: 8px;
+        border-color: #49a09d;
+       
         
     }
-    
 
+    .material-symbols-outlined{ /*icons*/
+        color: white;
+        size: 10px;
+    }
+     
+    /* butoes 'entrar' e 'esqueci a senha' */
+
+    #box-enviar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .enviar {
+        background-color: #49a09d;
+        color: white;
+        text-align: center;
+        height: 42px;
+        width: 228px;
+        border-radius: 8px;
+        border-color: #49a09d;
+        box-shadow: white;
+    
+        
+    }
+
+    .enviar:hover{
+        background-color: aqua;
+    }
+
+    #esque{
+        background-color: white;
+        color: #009792;
+    }
+
+    #esque:hover{
+        background-color: aquamarine;
+    }
 }
+
+@media  screen and (min-width:769px) and (max-width:999px) {
+    body{
+        background-color: pink;
+    }
+}
+
