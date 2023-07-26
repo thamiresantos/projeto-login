@@ -25,7 +25,7 @@ main {
     width: 100vh;
 }
 
-section > #login {
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,11 +35,18 @@ section > #login {
     background-color: white;
     width: 250px;
     height: 500px;
-    border-radius: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
 }
 
-section > div > #imagem {
-    background-color: #5f2c82 url(../imagens/flores.jpg) no-repeat;
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url(../imagens/flores.jpg) no-repeat;
     background-size: cover;
     height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
 }
