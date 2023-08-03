@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> <!--codigo do icon representando o usuario-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> <!--codigo do icon da chave-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!--codigo para acessar os icons do google-->
     
 </head>
 <body>
@@ -17,20 +16,33 @@
 
          <div id="imagem">
 
-            </div>
+        </div>
 
             <div id="formulario">
             <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
                 </p>
-            <form action="login.php" method="post">
+            <form action="login.php" method="post" autocomplete="on">
+
+                <div class="campo">
+                    <span class="material-icons">person</span> <!--icon usuario-->
+                    <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                    <label for="ilogin">Login</label>
+                </div>
                 
-                <span class="material-symbols-outlined">person</span> <!--icon usuario-->
-                <input type="email" name="email" id="emailuser" value="seu e-mail" >
-                <span class="material-symbols-outlined"> vpn_key </span> <!--icon chave-->
-                <input type="password" name="senha" id="senhauser">
-                <input type="button" value="Entrar" class="enviar">
-                <input type="button" value="Esqueci a senha" class="enviar" id="esque">
+                <div class="campo">
+                    
+                    <span class="material-icons">vpn_key</span> <!--icon chave-->
+                    <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="10">
+                    <label for="isenha">Senha</label>
+                </div>
+            
+                
+                <input type="submit" value="Entrar" class="enviar">
+                <a href="esqueci.html">
+                    Esqueci s senha <span class="material-icons">mail</span>
+                    
+                </a>
                 
             </form>
     

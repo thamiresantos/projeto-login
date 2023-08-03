@@ -18,9 +18,9 @@ Grandes telas: acima de 1200px
     }
 
     body {
-        background-color: #5f2c82;
+        background-color: #5f2c82 ;
         height: 100vh;
-        width: 100vh;
+        width: 100vw;
     
     }
 
@@ -35,7 +35,7 @@ Grandes telas: acima de 1200px
        
     }
 
-    #login{
+    section#login{
         background-color: white;
         height: 500px; /*altura*/
         width: 250px; /*largura*/
@@ -48,12 +48,15 @@ Grandes telas: acima de 1200px
     transition-timing-function: ease; /* pequena animação*/
     }
 
-    #imagem > img {
+    #imagem {
+        background:#5f2c82 url(../imagens/flores.jpg);
+        background-size: cover;
         height: 195px;
         width: 250px;
         border-radius: 12px 12px 0px 0px ;
     
     } 
+
  /* butoes do formularoe */
     #formulario > h1 {
         text-align: center;
@@ -86,14 +89,10 @@ Grandes telas: acima de 1200px
         
     }
 
-    .material-symbols-outlined{ /*icons*/
-        color: white;
-        size: 10px;
-    }
      
     /* butoes 'entrar' e 'esqueci a senha' */
 
-    #box-enviar{
+    #botoes{
         display: flex;
         flex-direction: column;
         align-items: center;
