@@ -8,7 +8,8 @@
     }
     
     section#login {
-        width: 80vw; /*80% da largura da tela */
+        width: 780px; 
+        height: 280px;
         margin:55px;
     
     }
@@ -17,7 +18,7 @@
         display: block;
         background-image: url(../imagens/flores.jpg);
         width: 200px;
-        height: 500px;
+        height: 280px;
         float: left;
         border-radius: 20px 0px 0px 20px;
         
@@ -36,12 +37,13 @@
     }
 
     section#login {
-        width: 920px;
+        width: 950px;
+        height: 350px;
     }
 
     div#imagem{
         width: 460px;
-        height: 500px;
+        height: 350px;
         float: right;
         border-radius: 0px 20px 20px 0px;
         

@@ -25,7 +25,6 @@ Grandes telas: acima de 1200px
     }
 
 
-
     main{
         display: flex;
         width: 100vw;
@@ -37,7 +36,7 @@ Grandes telas: acima de 1200px
 
     section#login{
         background-color: white;
-        height: 500px; /*altura*/
+        height: 515px; /*altura*/
         width: 250px; /*largura*/
         margin: 50px;
         border-radius: 20px;
@@ -57,13 +56,22 @@ Grandes telas: acima de 1200px
     
     } 
 
- /* butoes do formularoe */
+ /* texto formulario */
+
+    #formulario {
+        margin: 8px;
+    }
     #formulario > h1 {
+        font-size: 24px;
         text-align: center;
+        margin-bottom: 10px;
+        
+        
     }
 
     #formulario > p {
-        text-align: left;
+        font-size: 13px;
+    
     }
 
     
@@ -71,15 +79,15 @@ Grandes telas: acima de 1200px
    /* butao de enviar o email e a senha*/
     .form{
         background-color:#5f2c82 ;
-        margin: 10px;
+        margin-bottom: 7px;
         height: 40px;
         border-radius: 7px;
-        display: flex;
+       
         gap: 2px;
     }
 
     .form > input {
-        background-color: #77f0eccb;
+        background-color: #94CFCD;
         margin: 3px;
         height: 30px;
         width: 187px;
@@ -97,9 +105,11 @@ Grandes telas: acima de 1200px
         flex-direction: column;
         align-items: center;
         gap: 2px;
+        
     }
 
-    .enviar {
+    /* botão Entrar */
+    #entrar{
         background-color: #49a09d;
         color: white;
         text-align: center;
@@ -108,20 +118,22 @@ Grandes telas: acima de 1200px
         border-radius: 8px;
         border-color: #49a09d;
         box-shadow: white;
-    
         
     }
 
-    .enviar:hover{
-        background-color: aqua;
+    #entrar:hover{
+        background-color: #2d6462
     }
+    
+/* botão esqueci minha senha*/
 
-    #esque{
+    #esqueci{
         background-color: white;
         color: #009792;
+        ;
     }
 
-    #esque:hover{
-        background-color: aquamarine;
+    #esqueci:hover{
+        background-color: #6cd3cf;
     }
 
