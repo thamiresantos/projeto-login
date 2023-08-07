@@ -29,7 +29,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    overflow: hidden; /* tudo que tiver fora da borada vaia ficar escondido*/
+    overflow: hidden; /* tudo que tiver fora da borada vai ficar escondido*/
 
     background-color: white;
     width: 250px;
@@ -133,7 +133,7 @@ form > a {
 }
 
 form > a:hover{
-    background-color :#6cd3cf;
+    background-color :#6ed6df;
 }
 
 /* icon email*/

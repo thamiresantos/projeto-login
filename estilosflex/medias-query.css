@@ -17,15 +17,23 @@
     div#imagem{
         display: block;
         background-image: url(../imagens/flores.jpg);
-        width: 200px;
+        width: 250px;
         height: 280px;
+        margin-right: 5px;
         float: left;
         border-radius: 20px 0px 0px 20px;
         
     }
 
-    div#formulario {
-    width: 70vw;
+    section#login > div#formulario {
+        display: block;
+        float: right;
+        width: 58%;
+    }
+
+    .form > input {
+        width: 86%;
+       
     }
 }
 
@@ -49,7 +57,28 @@
         
     }
 
+    div.form{
+         width: 465px;
+    }
 
+    .form > input {
+        width: 405px;
+       
+    }
 
+    #botoes{
+        width: 465px;
+    }
+
+    #formulario > h1 {
+        font-size: 30px;
+    }
+
+    #formulario > p {
+        font-size: 18px;
+    }
 }
+
+
+
 
